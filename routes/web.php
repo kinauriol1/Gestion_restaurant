@@ -24,6 +24,12 @@ Route::get('home/about', function () {
 })->name('app_about');
 
 
+Route::get('/livraison', [DeliveryController::class, 'create'])->name('livraison.create');
+Route::post('/livraison', [DeliveryController::class, 'store'])->name('livraison.store');
+
+Route::get('/livraison.store', [DeliveryController::class, 'create'])->name('livraison.store');
+
+
 // ADMIN
 Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('app_admin');
 
@@ -35,6 +41,13 @@ Route::get('/serveur/commandes', [ServeurController::class, 'commandes'])->name(
 // CLIENT
 Route::get('/client/menu', [ClientController::class, 'menu'])->name('app_client_menu');
 Route::get('/client/avis', [ClientController::class, 'avis'])->name('app_client_avis');
+
+Route::get('/client/paiement', function () {
+    return view('caissier.paiement');
+})->name('paiement.create');
+
+Route::post('/client/paiement', [PaiementController::class, 'store'])->name('paiement.store');
+
 
 // CUISINIER
 Route::get('/cuisinier/preparations', [CuisinierController::class, 'preparations'])->name('app_cuisinier');

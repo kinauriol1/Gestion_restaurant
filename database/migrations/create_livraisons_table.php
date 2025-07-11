@@ -6,16 +6,21 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    public function up(): void
-    {
-        Schema::create('livraisons', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('commande_id')->constrained();
-            $table->string('adresse');
-            $table->boolean('livree')->default(false);
-            $table->timestamps();
-        });
-    }
+    public function up()
+{
+    Schema::create('deliveries', function (Blueprint $table) {
+        $table->id();
+        $table->string('nom');
+        $table->string('prenom');
+        $table->string('telephone');
+        $table->string('email')->nullable();
+        $table->text('adresse');
+        $table->string('ville');
+        $table->string('zone');
+        $table->string('mode_paiement');
+        $table->timestamps();
+    });
+}
 
     public function down(): void
     {
