@@ -19,13 +19,14 @@ Route::get('/home', function () {
 })->name('app_home');
 
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('home/about', function () {
+    return view('home.about');
 })->name('app_about');
 
 
 // ADMIN
 Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('app_admin');
+
 
 
 // SERVEUR

@@ -14,7 +14,7 @@
 
     li a {
         display: block;
-        color: white;
+        color: rgba(255, 255, 255, 0.848);
         text-align: center;
         padding: 14px 20px;
         text-decoration: none;
@@ -23,7 +23,7 @@
     }
 
     li a:hover {
-        background-color: #1abc9c;
+        background-color: #1abc9cd8;
     }
 
     li a.active {
@@ -33,7 +33,7 @@
 
 <ul>
     <li><a href="{{ route('app_home') }}" class="active">Home</a></li>
-    <li><a href="{{ route('app_home') }}">About</a></li>
+    <li><a href="{{ route('app_about') }}">About</a></li>
     <li><a href="{{ route('app_admin') }}">Dashboard</a></li>
     <li><a href="{{ route('app_caissier') }}">Paiements</a></li>
     <li><a href="{{ route('app_client_menu') }}">Menu</a></li>

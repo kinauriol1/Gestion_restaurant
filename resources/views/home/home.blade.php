@@ -9,5 +9,6 @@
         <p class="lead">Découvrez nos plats délicieux, notre service rapide et notre passion pour la bonne cuisine.</p>
     </div>
 </div>
+
 @endsection
 

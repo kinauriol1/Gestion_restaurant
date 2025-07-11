@@ -47,7 +47,7 @@
     }
 
     ul {
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(253, 248, 248, 0.226);
         padding: 0;
         display: flex;
         flex-wrap: wrap;
@@ -55,18 +55,30 @@
     }
 
     li a {
-        color: #fff;
+        color: #ffffffe6;
         padding: 14px 20px;
         text-decoration: none;
         font-weight: bold;
         transition: background-color 0.3s ease;
+}
+    div h1 {
+        color: yellowgreen;
     }
-
+    h2 {
+        color: rgba(255, 255, 0, 0.463);
+    }
+    p {
+        color: rgba(255, 255, 255, 0.664);
+    }
+    ul li  strong {color:blanchedalmond; }
+    ul li {
+        color: rgba(255, 255, 255, 0.81);
+            }
     li a:hover {
-        background-color: #f39c12;
+        background-color: #f39d129e;
     }
 
-    li a.active {
-        background-color: #c0392b;
-    }
+    /* li a.active {
+        background-color: #c03a2bb5;
+    } */
 </style>

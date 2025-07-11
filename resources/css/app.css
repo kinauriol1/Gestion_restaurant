@@ -15,6 +15,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.6); /* fallback */
+    background-color: rgba(0, 0, 0, 0.807); /* fallback */
     background-blend-mode: darken;
 }
