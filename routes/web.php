@@ -7,8 +7,7 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\CuisinierController;
 use App\Http\Controllers\CaissierController;
 use App\Http\Controllers\LivreurController;
-
-
+use App\Http\Controllers\CommandeController;
 
 Route::get('/', function () {
     return view('home.home');
@@ -56,3 +55,8 @@ Route::get('/cuisinier/preparations', [CuisinierController::class, 'preparations
 Route::get('/caissier/paiements', [CaissierController::class, 'paiements'])->name('app_caissier');
 // LIVREUR
 Route::get('/livreur/livraisons', [LivreurController::class, 'livraisons'])->name('app_livreur');
+
+Route::get('/commande/{id}', [CommandeController::class, 'show'])->name('commande');
+
+Route::get('/Client/menu', [ClientController::class, 'menu'])->name('menu');
+
