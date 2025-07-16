@@ -80,6 +80,7 @@
                 <td>{{ $commande->id }}</td>
                 <td>{{ $commande->nom_client }}</td>
                 <td>{{ $commande->plat }}</td>
+                <td></td>
                 <td>{{ $commande->quantite }}</td>
                 <td>{{ $commande->prix_total }}</td>
                 <td>{{ $commande->created_at->format('d/m/Y à H:i') }}</td>
