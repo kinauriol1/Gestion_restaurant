@@ -7,6 +7,7 @@
     <div>
         <h1 class="display-4 fw-bold">BIENVENUE SUR NOTRE SITE DE RESTAURATION</h1>
         <p class="lead">Découvrez nos plats délicieux, notre service rapide et notre passion pour la bonne cuisine.</p>
+       
     </div>
 </div>
 

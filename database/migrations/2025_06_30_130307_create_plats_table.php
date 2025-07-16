@@ -12,8 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('plats', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+           Schema::create('plats', function (Blueprint $table) {
+              $table->id();
+              $table->string('nom');      // Ajouté : nom du plat
+              $table->integer('prix');    // Ajouté : prix du plat
+              $table->timestamps();
+});
+
         });
     }
 

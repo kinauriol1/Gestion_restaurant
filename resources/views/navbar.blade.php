@@ -34,11 +34,12 @@
 <ul>
     <li><a href="{{ route('app_home') }}" class="active">Home</a></li>
     <li><a href="{{ route('app_about') }}">About</a></li>
-    <li><a href="{{ route('app_admin') }}">Dashboard</a></li>
+    <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
     <li><a href="{{ route('app_caissier') }}">Paiements</a></li>
     <li><a href="{{ route('app_client_menu') }}">Menu</a></li>
     <li><a href="{{ route('app_client_avis') }}">Avis</a></li>
     <li><a href="{{ route('app_cuisinier') }}">Préparations</a></li>
     <li><a href="{{ route('app_livreur') }}">Livraisons</a></li>
-    <li><a href="{{ route('app_serveur') }}">Commandes</a></li>
+    <li><a href="{{ route('commande.form') }}">Commandes</a></li>
+
 </ul>

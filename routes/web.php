@@ -56,7 +56,12 @@ Route::get('/caissier/paiements', [CaissierController::class, 'paiements'])->nam
 // LIVREUR
 Route::get('/livreur/livraisons', [LivreurController::class, 'livraisons'])->name('app_livreur');
 
-Route::get('/commande/{id}', [CommandeController::class, 'show'])->name('commande');
+
+Route::get('/commande/formulaire', [CommandeController::class, 'form'])->name('commande.form');
+
+Route::post('/commande', [CommandeController::class, 'store'])->name('commande.store');
 
 Route::get('/Client/menu', [ClientController::class, 'menu'])->name('menu');
+
+Route::get('/dashboard', [CommandeController::class, 'dashboard'])->name('dashboard');
 

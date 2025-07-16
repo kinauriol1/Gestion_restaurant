@@ -12,8 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('commandes', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+             $table->id();
+             $table->string('nom_client');
+             $table->string('plat');
+             $table->integer('quantite');
+             $table->integer('prix_total');
+             $table->timestamps();
         });
     }
 

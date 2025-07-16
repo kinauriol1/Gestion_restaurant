@@ -10,9 +10,10 @@ return new class extends Migration
     {
         Schema::create('commandes', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained(); // client
-            $table->string('table_numero')->nullable();
-            $table->enum('statut', ['en attente', 'en cours', 'prêt', 'livré'])->default('en attente');
+            $table->string('nom_client');
+            $table->string('plat');
+            $table->integer('quantite');
+            $table->integer('prix_total');
             $table->timestamps();
         });
     }
